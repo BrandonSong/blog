@@ -2,9 +2,9 @@
 # data: 2019/1/3
 
 from django.conf.urls import url
+from users.views import RegisterView
 
 
 urlpatterns = [
-    # 用户注册模块
-    # 用户登录模块
+    url(r'^register/', RegisterView.as_view(), name="register"),  # 用户模块
 ]
